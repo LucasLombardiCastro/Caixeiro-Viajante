@@ -1,5 +1,5 @@
 ﻿all: caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o main.o
-	gcc caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o main.o -o caixeiroViajante -std=c99 -Wall
+	gcc caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o main.o -o caixeiroViajante -std=c99 -Wall -g
 
 caminhoCidade.o:
 	gcc -c caminhoCidade.c -o caminhoCidade.o
@@ -20,4 +20,4 @@ clean:
 	rm *.o caixeiroViajante
 
 run:
-	./caixeiroViajante
+	valgrind ./caixeiroViajante
