@@ -1,5 +1,5 @@
-﻿all: caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o main.o
-	gcc caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o main.o -o caixeiroViajante -std=c99 -Wall -g
+﻿all: caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o pilha.o main.o
+	gcc caminhoCidade.o listaEncadeada.o cidade.o listaSequencial.o pilha.o main.o -o caixeiroViajante -std=c99 -Wall -g
 
 caminhoCidade.o:
 	gcc -c caminhoCidade.c -o caminhoCidade.o
@@ -12,6 +12,9 @@ cidade.o:
 
 listaSequencial.o:
 	gcc -c listaSequencial.c -o listaSequencial.o
+
+pilha.o:
+	gcc -c pilha.c -o pilha.o
 
 main.o:
 	gcc -c main.c -o main.o

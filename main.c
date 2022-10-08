@@ -3,6 +3,7 @@
 #include <stdbool.h>
 
 #include "listaSequencial.h"
+#include "pilha.h"
 
 void preencheLista(LISTA_SEQUENCIAL *listaSequencial, int quantidadeCidades);
 void entradaDados(CAMINHO_CIDADE *caminhoCidade, LISTA_SEQUENCIAL *listaSequencial);
